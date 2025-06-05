@@ -1,3 +1,4 @@
+// components/ui/navbar.jsx
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
@@ -41,7 +42,9 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 h-0.5 w-full bg-blue-400 scale-x-0 origin-left transition-transform hover:scale-x-100"></span>
               </a>
             </Link>
-          ))}
+          ))}  {/* ← Note the double closing: 2×”)” then “}” */}
         </div>
       </div>
     </motion.nav>
+  );
+}
